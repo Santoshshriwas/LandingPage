@@ -1,0 +1,410 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Santosh Shriwas">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <title>Landing Page</title>
+
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+        color: #fff;
+      }
+      body {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+
+      nav {
+        height: 50px;
+        background-color: #242b2e;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+      }
+
+      .large-screens {
+        max-width: 1200px;
+        width: 100%;
+        margin: auto;
+        justify-content: space-between;
+        display: none;
+      }
+
+      .small-screens {
+        margin: 0px 20px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-wrap: wrap;
+      }
+
+      .large-screens > img {
+        width: 50px;
+      }
+
+      .small-screens > img {
+        width: 30px;
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        color: #fff;
+        margin-right: 30px;
+      }
+
+      .nav-links a:hover {
+        color: #3bbbf7;
+        scale: 1.5;
+      }
+
+      .large-screens button {
+        padding: 0px 40px;
+        margin: 10px 0px;
+        border: 0;
+        border-radius: 5px;
+        background-color: #0072e1;
+        color: #fff;
+        font-weight: bold;
+      }
+
+      .large-screens button:hover {
+        scale: 1.1;
+        cursor: pointer;
+      }
+
+      .hero-section {
+        max-width: 1200px;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .hero-section > video {
+        width: 90%;
+        border: 0;
+        outline: 0;
+      }
+
+      .hero-section > .text-section {
+        height: 600px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 20px;
+      }
+
+      .text-section > h3 {
+        font-size: 30px;
+        margin-bottom: 0;
+      }
+
+      .text-section > h1 {
+        font-size: 60px;
+        margin-top: 5px;
+        color: #1893f7;
+        margin-bottom: 0;
+      }
+
+      .text-section > h4 {
+        font-size: 20px;
+        margin: 30px 0px;
+        color: #1893f7;
+      }
+
+      .sponsor-images img {
+        width: 60%;
+        margin-bottom: 20px;
+      }
+
+      .info-section {
+        max-width: 1200px;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 100px 0px;
+      }
+
+      .info-section h1 {
+        font-size: 30px;
+        color: #383cc1;
+        text-align: center;
+      }
+
+      .info-section p {
+        font-size: 20px;
+        margin-bottom: 0;
+        margin-top: 10px;
+        font-weight: lighter;
+        text-align: center;
+      }
+
+      @media screen and (min-width: 800px) {
+        .large-screens {
+          display: flex;
+        }
+        .small-screens {
+          display: none;
+        }
+
+        .hero-section {
+          flex-direction: row;
+          align-items: start;
+          justify-content: space-between;
+        }
+
+        .hero-section > video {
+          width: 600px;
+          height: 600px;
+        }
+
+        .info-section {
+          background-color: #000;
+          color: #fff;
+        }
+
+        .info-section h1 {
+          font-size: 60px;
+        }
+
+        .info-section p {
+          font-size: 40px;
+        }
+        .Discraption{
+          padding-left: 150px;
+        }
+        .Discraption div{
+          margin-top: 100px;
+          margin-left: 320px;
+          font-size: 25px;
+        }
+        .Discraption p{
+          width: 1140px;
+          padding-left: 10px;
+        }
+        .Discraption h1{
+          padding-left: 300px;
+        }
+        #Step1{
+            background-color: #e3e0e0;
+            width: 340px;
+            height: 280px;
+            justify-content: center;
+            padding-left: 30px;
+            border-right:2px solid rgb(154, 154, 154) ;
+            padding-top: 40px;
+        }
+        #Step2{
+            background-color: #e3e0e0;
+            width: 340px;
+            height: 280px;
+            justify-content: center;
+            padding-left: 30px;
+            border-right:2px solid rgb(154, 154, 154) ;
+            padding-top: 40px;
+        }
+        #Step3{
+            background-color: #e3e0e0;
+            width: 340px;
+            height: 280px;
+            justify-content: center;
+            padding-left: 30px;
+            
+            padding-top: 40px;
+        }
+        .div{
+          justify-content: flex;
+        }
+        .off1{
+          font-size: 25px;
+          padding-top: 30px;
+          padding-left: 450px;
+          padding-bottom: 50px;
+        }
+        .card{
+          display: flex;
+          padding-left: 10px;
+          
+        }
+        /* .card div{
+          border: 2px solid red;
+          border-radius: 1rem;
+          
+        } */
+        
+        .offer div img{
+          height: 150px;
+          width: 230px;
+          overflow: hidden;
+          margin: 10px;
+          border: 2px solid red;
+          border-radius: 2rem;
+        }
+        .blog > video {
+          width: 600px;
+          height: 600px;
+          padding-left: 140px;
+        }
+       #bond{
+        font-size: 40px;
+       }
+       .blog p{
+        font-size: 20px;
+       }
+       .blog{
+        display: flex;
+       }
+       .blogc{
+        padding-top: 150px;
+        padding-left: 200px;
+       }
+       .card div img:hover{
+        scale: 1.1;
+        transition: scale 1s;
+       }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <section class="large-screens">
+        <img
+          src="https://cdn.logo.com/hotlink-ok/logo-social-sq.png"
+          alt="Logo"
+        />
+        <div class="nav-links">
+          <a href="#">Home</a>
+          <a href="#">Blog</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+        <button>Apply Now </button>
+      </section>
+      
+
+      <section class="small-screens">
+        <img
+          src="https://cdn.logo.com/hotlink-ok/logo-social-sq.png"
+          alt="Logo"
+        />
+
+        <div>
+          <span class="material-symbols-outlined"> menu </span>
+        </div>
+      </section>
+      
+       
+      
+    </nav>
+    <section class="Discraption">
+      <h1><b>All Finserv SBM Bank Binge SuperCard - First-Year-Free
+      </b></h1>
+            <p>The All Finserv SBM Bank Binge SuperCard - First-Year-Free is a       one-of-a-kind credit card that comes with features such as no joining fee,
+               easy EMI conversion, emergency cash advance, and interest-free cash withdrawal. You also get exclusive SuperCard benefits worth up to Rs. 9. with a 5% cashback offer, fuel surcharge waiver, 12X rewards on online spends, airport lounge access, and more.</p>
+
+               <div>
+                <b>Get an instant Credit Card in just 3 easy steps!</b>
+               </div><br>
+               <br>
+              
+    </section>
+    <section style="display: flex; padding-left: 160px;">
+      <div id="Step1">
+          <div  style="color: #000;"><img src="https://img.icons8.com/?size=50&id=7994&format=png" alt=""></div>
+            <div><b>Step 1: Select Your Ideal Credit Card</b></div><br>
+            <br>
+            <div>Choose a Credit Card based on your interests,<br> such as Movies, Travel, Shopping, and more</div>
+  
+          </div><br>
+          <br>
+      <div id="Step2">
+          <div  style="color: #000;"><img src="https://img.icons8.com/?size=80&id=42369&format=png" alt=""></div>
+            <div><b>Step 2: Share Your Basic Information</b></div><br>
+            <br>
+            <div>Simply share your basic details like your Name,<br> Phone Number, PAN, and Aadhar</div>
+  
+      </div><br>
+          <br>
+      <div id="Step3">
+          <div  style="color: #000;"><img src="https://img.icons8.com/?size=50&id=i7OUy8S40wf7&format=png" alt=""></div>
+            <div><b>Step 3: Complete VKYC and Receive <br>
+               Your Virtual Card</b></div><br>
+            <br>
+            <div>Finish the VKYC process, receive your virtual <br> card, and start exploring irresistible offers on <br> your new Credit Card</div>
+      </div>
+    </section> 
+    <section class="offer">
+         <div class="off1"><b>Get the Best Credit Cards that we have to Choose</b></div>
+         <div class="card">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             <div ><img src="https://www.sbmbank.co.in/smart_banking/content/images/tm_card.png" alt=""></div>&nbsp;&nbsp;
+             <div><img src="https://tse2.mm.bing.net/th?id=OIP.Mr6Oj5CITjlCrtdTGmsmFwHaFG&pid=Api&P=0&h=250" alt=""></div>&nbsp;&nbsp;
+             <div><img src="https://tse1.mm.bing.net/th?id=OIP.YpEa4w2KfiuSqIKdoF2xxwHaE3&pid=Api&P=0&h=190" alt=""></div>&nbsp;&nbsp;
+             <div><img src="https://tse1.mm.bing.net/th?id=OIP.qmCW47vwHM-8D2NSpNwpoQHaEb&pid=Api&P=0&h=180" alt=""></div>&nbsp;&nbsp;
+             <div><img src="https://tse2.mm.bing.net/th?id=OIP.5pIBzq8NFiQu3mv0C1zTTQAAAA&pid=Api&P=0&h=210" alt=""></div>&nbsp;&nbsp;
+         </div>
+    </section>    
+
+    <main class="hero-section">
+      <div class="text-section">
+        <h3>Say Hi To</h3>
+        <h1>One Card</h1>
+        <h4>Co-branded Card Issuers :</h4>
+        <div class="sponsor-images">
+          <img
+            src="https://www.getonecard.app/images/legal/Banking_partners_24thJan_dark__.png"
+            alt="sponsor1"
+          />
+        </div>
+        <p>
+          India's best metal credit card. Built with full-stack tech. Backed by
+          the principles of simplicity, transparency, and giving back control to
+          the user.
+        </p>
+      </div>
+      <video
+        loop
+        autoplay
+        controls
+        src="https://www.getonecard.app/images/say_hi_2x_d3_.mp4"
+      ></video>
+    </main>
+            
+    <section class="info-section">
+      <h1>No Hidden Fees Ever</h1>
+      <p>No Joining Fees.</p>
+      <p>No Annual Fees.</p>
+      <p>No Rewards Redemption Fees.</p>
+    </section>
+    <section class="blog">
+      <video
+        loop
+        autoplay
+        controls
+        src="https://www.getonecard.app/images/Website_Card_controls.mp4"
+      ></video>
+      <div class="blogc">
+      <div><img src="https://www.getonecard.app/images/feature/control_app_icon.svg" alt=""></div>
+      <div id="bond"><b>Powerful <br>
+        mobile app</b></div>
+        <p>Control all aspects of your co-branded <br> credit card from the powerful OneCard app <br> - transaction limit, domestic/international <br> use, online/offline use, contactless <br> payments and much more.</p>
+      </div>
+    </section>
+  </body>
+</html>
