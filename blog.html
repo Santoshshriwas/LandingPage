@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+     
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+        color: #fff;
+      }
+      body {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+
+      nav {
+        height: 50px;
+        background-color: #242b2e;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+      }
+
+      .large-screens {
+        max-width: 1200px;
+        width: 100%;
+        margin: auto;
+        justify-content: space-between;
+        display: none;
+      }
+
+      .small-screens {
+        margin: 0px 20px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-wrap: wrap;
+      }
+
+      .large-screens > img {
+        width: 50px;
+      }
+
+      .small-screens > img {
+        width: 30px;
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        color: #fff;
+        margin-right: 30px;
+      }
+
+      .nav-links a:hover {
+        color: #3bbbf7;
+        scale: 1.5;
+      }
+
+      .large-screens button {
+        padding: 0px 40px;
+        margin: 10px 0px;
+        border: 0;
+        border-radius: 5px;
+        background-color: #0072e1;
+        color: #fff;
+        font-weight: bold;
+      }
+
+      .large-screens button:hover {
+        scale: 1.1;
+        cursor: pointer;
+      }
+      @media screen and (min-width: 800px) {
+        .large-screens {
+          display: flex;
+        }
+        .small-screens {
+          display: none;
+        }
+    }
+    .blog p{
+        font-size: 20px;
+       }
+       /* .blog{
+        display: flex;
+       } */
+       .blogc{
+        padding-top: 150px;
+        padding-left: 200px;
+       }
+       .card div img:hover{
+        scale: 1.1;
+        transition: scale 1s;
+       }
+       .use{
+        display: flex;
+        
+       }
+       .use div{
+        padding-right: 30px;     
+       }
+       video {
+          width: 600px;
+          height: 600px;
+          padding-left: 140px;
+        }
+       #bond{
+        font-size: 40px;
+       }
+         .service{
+                 width: 400px;
+                 height: 500px;  
+                 background-color: rgba(121, 121, 121,0.3); 
+          }
+          .service img{
+                 width: 400px;
+                 height:250px;
+          }
+          .app{
+               font-size: 40px;
+               color: black;
+               padding-left: 30px;
+               padding-top: 10px;
+          }
+          .chi{
+               font-size: 20px;
+               color: black;
+               padding-left: 30px;
+               padding-top: 40px;
+
+          }
+          .chi1{
+               font-size: 20px;
+               color: black;
+               padding-left: 30px;
+               padding-top: 25px;
+
+          }
+          .service button{
+               font-size: 20px;
+               background-color: blue;
+               color: white;
+               
+               
+          }
+          .service button:hover {
+               scale: 1.1;
+               cursor: pointer;
+          }
+         
+          .ser{
+               display: flex;
+               padding-left: 50px;
+          }
+          .but{
+               padding-top: 40px;
+               padding-left: 30px;
+          }
+          #num{
+               padding-left: 40px;
+          }
+          #num1{
+               padding-left: 50px;
+          }
+          #num2{
+               padding-left: 50px;
+          }
+          .header{
+          background-color: black;
+          width: 100%;
+          height: 600px;
+          display: flex;
+          padding-top: 30px;
+        }
+        .img1 img{
+            width: 200px;
+            height: 200px;
+        }
+        
+        .img2 img{
+            width: 50px;
+            height: 50px;
+        }
+        .img{
+            display: flex;
+        }
+        .test{
+            color: white;
+            font-size: 30px;
+            padding-top: 8px;
+        }
+       .cont div img{
+        width: 50px;
+        height: 50px;
+       }
+       .cont{
+        display: flex;
+       }
+       .co{
+        font-size: 30px;
+        color: white;
+        padding-top: 8px
+       }
+       .header1{
+        padding-left: 80px;
+       }
+       .lae div img{
+        color: white;
+        width: 30px;
+        height: 30px;
+        
+       }
+       .lae {
+        display: flex;
+        padding-top: 28px;
+        
+       }
+       .lae div{
+        padding-right: 30px;
+       }
+    .iso img{
+        width: 80px;
+        height: 80px;
+        padding-top: 20px;
+    }
+    .infor{
+        font-size: 50px;
+        color: white;
+        
+    }
+    .header2 .infor{
+        padding-top: 130px;
+        padding-left: 170px;
+    }
+    .header2 div{
+          font-size: 30px;
+          color: white;
+          padding-top: 30px;
+          padding-left: 170px;
+    }
+    .header3 div{
+            color: white;
+            font-size: 40px;
+            padding-top: 130px;
+            padding-left: 30px;
+    }
+    .header3 p{
+            color: white;
+            font-size: 20px;
+            padding-left: 30px;
+    }
+    #div{
+        padding-left: 200px;
+        padding-top: 130px;
+    }
+       </style>
+</head>
+<body>
+     <nav>
+          <section class="large-screens">
+            <img
+              src="https://cdn.logo.com/hotlink-ok/logo-social-sq.png"
+              alt="Logo"
+            />
+            <div class="nav-links">
+              <a href="home.html">Home</a>
+              <a href="blog.html">Blog</a>
+              <a href="about.html">About</a>
+              <a href="Contact.html">Contact</a>
+            </div>
+            <button><a href="aplay.html">Apply Now </a></button>
+          </section>
+          
+    
+          <section class="small-screens">
+            <img
+              src="https://cdn.logo.com/hotlink-ok/logo-social-sq.png"
+              alt="Logo"
+            />
+    
+            <div>
+              <span class="material-symbols-outlined"> menu </span>
+            </div>
+          </section>
+        </nav><br>
+        <br>
+    <section class="blog">
+     <div class="ser">
+ <div id="num">
+          <div class="service">
+             <div><img src="https://www.kotak.com/content/dam/Kotak/product_card_images/Application-Status.jpg.transform/transformer-width-360-height-202/image.jpg" alt=""></div>
+             <div class="app"><b>Application Status</b></div>
+             <div class="chi"><b>Check your credit card application status</b></div>
+             <div class="but">
+             <button>Check now</button>
+             </div>
+          </div>
+     </div>    
+     <div id="num1">
+          <div class="service">
+             <div><img src="https://www.kotak.com/content/dam/Kotak/herosliderbanner/PIN-generation-t.jpg.transform/transformer-width-360-height-202/image.jpg" alt=""></div>
+             <div class="app"><b>Card Pin Generation</b></div>
+             <div class="chi1"><b>nstantly generate your Credit Card PIN anytime, anywhere</b></div>
+             <div class="but">
+             <button>Generation pin</button>
+             </div>
+          </div>
+     </div>    
+     <div id="num2">
+          <div class="service">
+             <div><img src="https://www.kotak.com/content/dam/Kotak/herosliderbanner/cc-payments-card.jpg.transform/transformer-width-360-height-202/image.jpg" alt=""></div>
+             <div class="app"><b>Card Bill Payments</b></div>
+             <div class="chi"><b>Pay your SBM Card bill in just 3 step</b></div>
+             <div class="but">
+             <button>Pay Now</button>
+             </div>
+          </div>
+     </div>     
+     </div>
+        <div style="display: flex;">
+        <video
+          loop
+          autoplay
+          controls
+          src="https://www.getonecard.app/images/Website_Card_controls.mp4"
+        ></video>
+        <div class="blogc">
+        <div><img src="https://www.getonecard.app/images/feature/control_app_icon.svg" alt=""></div>
+        <div id="bond"><b>Powerful <br>
+          mobile app</b></div>
+          <p>Control all aspects of your co-branded <br> credit card from the powerful OneCard app <br> - transaction limit, domestic/international <br> use, online/offline use, contactless <br> payments and much more.</p>
+        </div>
+        </div>
+        <div style="padding-top: 40px; font-size: 30px; padding-left: 400px;">Insta EMI Card accepted across all leading brands</div>
+      <div class="use">
+        <div style="padding-left: 100px;">
+             <div style="padding-top: 100px;"><img src="https://cms-assets.bajajfinserv.in/is/image/bajajfinance/amazon-v2?scl=1&fmt=png-alpha" alt=""></div>
+             <a style="padding-left: 7px;" href="https://www.amazon.in">Amazon Pay</a>
+        </div>
+        <div>
+             <div style="padding-top: 100px;"><img src="https://cms-assets.bajajfinserv.in/is/image/bajajfinance/flipkart-v2?scl=1&fmt=png-alpha" alt=""></div>
+             <a style="padding-left: 15px;" href="https://www.flipkart.com">Filipkart</a>
+        </div>
+        <div>
+             <div style="padding-top: 100px;"><img src="https://cms-assets.bajajfinserv.in/is/image/bajajfinance/vijay-sales-v3?scl=1&fmt=png-alpha" alt=""></div>
+             <a style="padding-left: 15px;" href="https://www.vijaysales.com/">Vijay Sales</a>
+        </div>
+        <div>
+             <div style="padding-top: 100px;"><img src="https://cms-assets.bajajfinserv.in/is/image/bajajfinance/croma-v2?scl=1&fmt=png-alpha" alt=""></div>
+             <a style="padding-left: 25px;" href="https://www.croma.com/">Croma</a>
+        </div>
+        <div>
+             <div style="padding-top: 100px;"><img src="https://cms-assets.bajajfinserv.in/is/image/bajajfinance/reliance-digital-v2?scl=1&fmt=png-alpha" alt=""></div>
+             <a style="padding-left: 10px;" href="https://www.reliancedigital.in/">reliance-digital</a>
+        </div>
+        <div>
+             <div style="padding-top: 100px;"><img src="https://cms-assets.bajajfinserv.in/is/image/bajajfinance/make-my-trip-v2?scl=1&fmt=png-alpha" alt=""></div>
+             <a style="padding-left: 10px;" href="https://www.makemytrip.com/">Make my Trip</a>
+        </div>
+        <div>
+             <div style="padding-top: 100px;"><img src="https://cms-assets.bajajfinserv.in/is/image/bajajfinance/bajaj-mall-v2?scl=1&fmt=png-alpha" alt=""></div>
+             <a style="padding-left: 15px;" href="https://www.bajajmall.in/">Bajaj Mall</a>
+        </div>
+        <div>
+             <div style="padding-top: 100px;"><img src="https://cms-assets.bajajfinserv.in/is/image/bajajfinance/hometown-v2-1?scl=1&fmt=png-alpha" alt=""></div>
+             <a style="padding-left: 15px;" href="https://www.agoda.com/">Home Twon</a>
+        </div>
+      </div>  
+      </section><br>
+<br>
+      <section class="header">
+          <div class="header1">
+              <br>
+              <br>
+              <div class="img1"><img src="https://cdn.logo.com/hotlink-ok/logo-social-sq.png" alt=""></div><br>
+              <br>
+              <div class="img">
+              <div class="img2"><img src="https://th.bing.com/th?id=OIP.pl1D1aE7IAPrL3LJYM9I2wHaHV&w=251&h=248&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt=""></div>
+              <div class="test">&nabla;  Santosh@gmail.com</div>
+              </div><br>
+              <br>
+              <div class="cont">
+                        <div><img src="https://th.bing.com/th?id=OIP.cFy_VwWWq2mwLOWhbXMUmAHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt=""></div>
+                        <div class="co">&nabla; 9589050819</div>
+              </div>
+  
+              <div class="lae">
+                  <div class="c1"><img src="https://th.bing.com/th?id=OIP._zd3qOGUdu3aiNtFaPyFhwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt=""></div>
+                  <div><img src="https://th.bing.com/th?id=OIP.xa0FgRBsvMi7bmVNCDYsCgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt=""></div>
+                  <div><img src="https://th.bing.com/th?id=OIP.aae7tr4DP90uPeiorFegWQHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt=""></div>
+                  <div><img src="https://th.bing.com/th?id=OIP.uPkEcj-y5SG87n0zkzDX-wHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt=""></div>
+                  <div><img src="https://th.bing.com/th?id=OIP.kjCUP06WDUMR88i5wo2SqwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt=""></div>
+                  <div><img src="https://th.bing.com/th?id=OIP.-jKAfW8b-1PaPE22LcjkTQHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt=""></div>
+              </div>
+              <div class="iso"><img src="https://th.bing.com/th?id=OIP.meF4W4RqFEEFKpMkuaxCowHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt=""></div>
+          </div>
+          <div class="header2">
+              <div class="infor"><b>Information</b></div>
+              <div>Home</div>
+              <div>About</div>
+              <div>Service</div>
+              <div>Offers</div>
+              <div>Contact</div>
+          </div>
+          <div class="header3">
+                 <div><b>Help & Support</b></div> 
+                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, soluta vero, quod dignissimos sed et dolorem assumenda magnam exercitationem debitis consequatur. Quod esse debitis reprehenderit numquam maiores eligendi, et voluptas quo cumque blanditiis, sed similique amet eum ipsam aperiam at fuga sit molestiae commodi. Ullam, similique quae! Recusandae, voluptatum fugit.</p> 
+                 <div id="div">@santosh@gmail.com</div>
+          </div>
+       </section>
+</body>
+</html>
